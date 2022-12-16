@@ -1,0 +1,95 @@
+:root {
+    --background-color: rgb(36,35,35);
+    --brand-color: rgb(226,0,116);
+}
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--brand-color);
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header p {
+    padding-top: 5px;
+    color: lightgray;
+}
+
+body {
+    background-color: rgb(36, 35, 35);
+}
+
+main {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 33.3%;
+    justify-content: space-evenly;
+}
+
+.card {
+    height:fit-content;
+    min-height: 200px;
+    width: 300px;
+    border: 1px dashed white;
+    margin: 35px;
+    border-radius: 10px;
+}
+
+.title-box{
+    min-height: 50px;
+    border: 1px solid white;
+    width: 90%;
+    border-radius: 10px;
+    margin: -25px auto 0 auto;
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+.title-box p{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.description{
+    padding: 5px
+}
+.code-area{
+    padding:5px;
+    background-color: var(--brand-color);
+    color:white;
+    margin: 5px;
+    border-radius: 10px;
+}
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    header {
+      background-color: #772014;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  }
